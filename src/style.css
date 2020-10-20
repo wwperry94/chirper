@@ -1,0 +1,57 @@
+.labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-color: rgb(101, 178, 214);
+    color: white
+}
+.card {
+    /* width: 175px; */
+    /* top: 250px; */
+    right: 10em;
+    padding: 8px 0;
+    /* position: fixed; */
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(101, 178, 214);
+    border-color: white;
+    border-radius: 50px;
+    border-width: thick;
+    margin-top: 1em;
+    margin-inline-start: 10em;
+    margin-inline-end: 10em;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chirp-btn {
+    margin-top: 1em;
+}
+.input-group {
+    width: 175px;
+    top: 5em;
+    right: 8em;
+    padding: 8px 0;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    color: rgb(101, 178, 214);
+    border-radius: 10px;
+    border-color: white;
+}
+.form-control {
+    background-color: white;
+    border-radius: 25px;
+    color: rgb(101, 178, 214);
+}

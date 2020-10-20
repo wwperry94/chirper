@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Chirp from './chirp';
 
 export default class Timeline extends Component {
   constructor() {
@@ -33,6 +32,7 @@ export default class Timeline extends Component {
         <label className="labels">{key}</label>
         <input
           className="form-control"
+          // placeholder = "Chrpr"
           type="text"
           value={value}
           onChange={(e) => this.handleChange(e, key)}
@@ -47,7 +47,7 @@ export default class Timeline extends Component {
     let { User, Post } = chirp;
     return (
       <div>
-        <form>
+        <form className="input-group">
           {this.formInputGroup("User", User)}
           {this.formInputGroup("Post", Post)}
           <button type="button" id="chirp-btn" className="btn btn-primary" onClick={this.handleSubmit}>Chirp!</button>
@@ -74,9 +74,9 @@ export default class Timeline extends Component {
             (chirp, idx) => {
               return <div key={idx} className="card">
                 <div className="card-body">
-                  <span className="badge badge-warning">{chirp.User}</span>
+                  <span className="badge badge-success">{chirp.User}</span>
                   <p className="card-text">
-                    <span className="badge badge-info">{chirp.Post}</span>
+                    <span className="badge badge-primary">{chirp.Post}</span>
                   </p>
                 </div>
               </div>
